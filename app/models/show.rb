@@ -5,7 +5,7 @@ class Show < ActiveRecord::Base
   def actors_list
     actors = []
     self.characters.each do |character|
-      actors << "#{character.name} - #{character.show.name}"
+      actors << "#{character.actor} - #{character.show.name}"
     end
     actors
   end
