@@ -3,7 +3,7 @@ class Character < ActiveRecord::Base
   belongs_to :show
   
   def say_that_thing_you_say
-    puts "#{self.name} always says: #{self.catchphrase}"
-    binding.pry
+    saying = "#{self.name} always says: #{self.catchphrase}"
+    saying
   end
 end
